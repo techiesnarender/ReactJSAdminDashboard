@@ -5,6 +5,7 @@ import { SidebarData } from '../../Data/Data'
 import { UilSignOutAlt, UilBars } from '@iconscout/react-unicons'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 const Sidebar = () => {
     const [selected, setSelected] = useState(0);
     const [expanded, setExpanded] = useState(true);
@@ -24,7 +25,7 @@ const Sidebar = () => {
             </div>
             <motion.div className='Sidebar'
                 variants={sidebarVariants}
-                animate={window.innerWidth <= 768 ? `${expanded}` : ""}
+                animate={window.innerWidth <= 768 ? `${expanded}` : ""} 
             >
 
                 {/* logo */}
@@ -39,15 +40,13 @@ const Sidebar = () => {
                 <div className="menu">
                     {SidebarData.map((item, index) => {
                         return (
-                            <div className={selected === index ? 'menuItem active' : 'menuItem'}
-                                key={index}
-                                onClick={() => setSelected(index)}
-                            >
-                                <item.icon />
-                                <span>
-                                    {item.name}
-                                </span>
-                            </div>
+                                <Link to={item.path} className={selected === index ? 'menuItem active' : 'menuItem'}
+                                    key={index}
+                                    onClick={() => setSelected(index)}
+                                >                                      
+                                <item.icon />                                                      
+                                    <span>{item.name}</span>
+                                </Link>                                            
                         )
                     })}
                     <div className='menuItem'>

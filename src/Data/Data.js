@@ -19,22 +19,27 @@ export const SidebarData = [
     {
         icon: UilEstate,
         name: 'Dashboard',
+        path: '/',
     },
     {
         icon: UilClipboardAlt,
         name: 'Orders',
+        path: '/orders',
     },
     {
         icon: UilUsersAlt,
         name: 'Customers',
+        path: '/customers',
     },
     {
         icon: UilPackage,
         name: 'Products',
+        path: '/products',
     },
     {
         icon: UilChart,
         name: 'Analytics',
+        path: '/analytics',
     },
 
 ];
@@ -98,20 +103,20 @@ export const UpdatesData = [
     {
         img: img1,
         name: "Andrew Thomas",
-        noti: "has ordered Apple samrt watch",
-        time: "25 second age"
+        noti: "has ordered Apple samrt watch and that will be delivered",
+        time: "25 second ago"
     },
     {
         img: img2,
-        name: "Andrew Thomas",
-        noti: "has ordered Apple samrt watch",
-        time: "25 second age"
+        name: "Mick jack",
+        noti: "has ordered Apple samrt watch and that will be delivered",
+        time: "25 second ago"
     },
     {
         img: img3,
-        name: "Andrew Thomas",
-        noti: "has ordered Apple samrt watch",
-        time: "25 second age"
+        name: "Diana Pride",
+        noti: "has ordered Apple samrt watch and that will be delivered",
+        time: "25 second ago"
     }
 
 ];
