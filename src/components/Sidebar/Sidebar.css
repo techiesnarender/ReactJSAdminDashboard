@@ -49,6 +49,9 @@
 
 .menuItem:hover {
     cursor: pointer;
+    background: var(--activeItem);
+    width: 100%;
+    margin-left: 8px;
 }
 
 .active {
@@ -83,8 +86,6 @@
         display: none;
     }
 }
-
-
 
 @media screen and (max-width: 768px) {
     .Sidebar {
