@@ -6,6 +6,7 @@ import { UilSignOutAlt, UilBars } from '@iconscout/react-unicons'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+
 const Sidebar = () => {
     const [selected, setSelected] = useState(0);
     const [expanded, setExpanded] = useState(true);
@@ -18,7 +19,7 @@ const Sidebar = () => {
             left: '-60%'
         }
     }
-    
+
     return (
         <>
             <div className='bars' style={expanded ? { left: "60%" } : { left: "5%" }} onClick={() => setExpanded(!expanded)}>
