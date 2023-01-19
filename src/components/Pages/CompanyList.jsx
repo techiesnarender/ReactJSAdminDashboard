@@ -14,23 +14,23 @@ function CompanyList() {
   /*---------------------props------------------------*/
 
   const columns = [
-    { field: 'id', headerName: 'ID', width: 50, headerClassName: 'super-app-theme--header',
+    { field: 'id', headerName: 'ID', width: 30, headerClassName: 'super-app-theme--header',
     headerAlign: 'center', },
-    { field: 'contactname', headerName: 'Name', width: 120,  headerClassName: 'super-app-theme--header',
+    { field: 'contactname', headerName: 'Name', width: 110,  headerClassName: 'super-app-theme--header',
     headerAlign: 'center', },
     { field: 'email', headerName: 'Email', width: 150,  headerClassName: 'super-app-theme--header',
     headerAlign: 'center', },
-    { field: 'company', headerName: 'Company Name', width: 150,  headerClassName: 'super-app-theme--header',
+    { field: 'company', headerName: 'Company Name', width: 140,  headerClassName: 'super-app-theme--header',
     headerAlign: 'center', },
     { field: 'address', headerName: 'Address', width: 150,  headerClassName: 'super-app-theme--header',
     headerAlign: 'center', },
     { field: 'open', headerName: 'Open Time', width: 90,  headerClassName: 'super-app-theme--header',
     headerAlign: 'center', },
-    { field: 'close', headerName: 'Close Time', width: 90,  headerClassName: 'super-app-theme--header',
+    { field: 'close', headerName: 'Close Time', width: 75,  headerClassName: 'super-app-theme--header',
     headerAlign: 'center', },
     {
       field: 'Action',
-      width: 180,
+      width: 175,
       sortable: false,
       headerAlign: 'center',
       renderCell: (params) => {
@@ -87,7 +87,7 @@ function CompanyList() {
   return (
     <div className="CompanyList">
     <h2>Sitter Details</h2>
-    
+      <Box sx={{ height: 500, width: '100%' }}>
       <DataGrid
         rows={data}
         // disableColumnFilter
@@ -111,6 +111,7 @@ function CompanyList() {
         }}
         loading={data.length === 0}
       />
+      </Box>
 
   </div>
   )

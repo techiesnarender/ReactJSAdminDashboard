@@ -1,8 +1,23 @@
+
 .CompanyList {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+   
 }
+
+.MuiDataGrid-root{
+    padding: 10px;
+    /* background-color: azure; */
+}
+.MuiDataGrid-row>*{
+    border: none !important;
+}
+
+.MuiDataGrid-columnHeaderTitle{
+    font-weight: bold !important;
+}
+
 
 @media screen and (max-width: 1200px) {
     .CompanyList {

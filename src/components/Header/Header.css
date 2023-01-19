@@ -1,0 +1,21 @@
+.Header {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    padding-top: 0rem;
+    transition: all 300ms ease;
+    z-index: 9;
+   
+}
+.MuiAppBar-root {
+    background: linear-gradient(106.37deg,
+    #F8D49A 29.63%,
+    #f0b1b3 51.55%,
+    #f3c6f1 90.85%);
+}
+
+
+.MuiPaper-root {
+    border-radius: 0.5rem !important;
+}   

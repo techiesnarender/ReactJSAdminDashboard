@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
+import Header from './components/Header/Header';
 import Analytics from './components/Pages/Analytics';
 import CompanyList from './components/Pages/CompanyList';
 import Customers from './components/Pages/Customers';
@@ -11,9 +12,10 @@ import MainDashboard from './MainDashBord';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <div className='AppGlass'>
-        <Router>
+      <div className='AppGlass'>     
+      <Header />   
         <Sidebar />
           <Routes>
             <Route exact index path="/" element={<MainDashboard />} />
@@ -23,9 +25,10 @@ function App() {
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/logout"  />
       </Routes>
-     </Router>
+    
       </div>
     </div>
+    </Router>
   );
 }
 
