@@ -87,8 +87,9 @@ function CompanyList() {
   return (
     <div className="CompanyList">
     <h2>Sitter Details</h2>
-      <Box sx={{ height: 500, width: '100%' }}>
+    <Box>
       <DataGrid
+      sx={{ height: 550, width: '100%' }}
         rows={data}
         // disableColumnFilter
         // disableColumnSelector
@@ -110,9 +111,8 @@ function CompanyList() {
           },
         }}
         loading={data.length === 0}
-      />
+      />  
       </Box>
-
   </div>
   )
 }
